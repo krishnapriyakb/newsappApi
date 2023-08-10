@@ -40,7 +40,7 @@ class _LoginFormState extends State {
                 child: TextFormField(
                   decoration: InputDecoration(
                       prefixIcon: Icon(Icons.account_box_sharp),
-                      labelText: 'Email',
+                      labelText: 'Email must contain @',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15))),
                   textInputAction: TextInputAction.next,
