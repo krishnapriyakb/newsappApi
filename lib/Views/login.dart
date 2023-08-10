@@ -40,13 +40,13 @@ class _LoginFormState extends State {
                 child: TextFormField(
                   decoration: InputDecoration(
                       prefixIcon: Icon(Icons.account_box_sharp),
-                      labelText: 'Email must contain @',
+                      labelText: 'Email',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15))),
                   textInputAction: TextInputAction.next,
                   validator: (uname) {
                     if (uname!.isEmpty || !uname.contains('@')) {
-                      return ' email';
+                      return ' email must contain @';
                     } else {
                       return null;
                     }
